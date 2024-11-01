@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="./conexao.js"  defer></script>
+    <title>Pagina API</title>
+
+    </head>
+    <body>
+        <div class="logo">
+            <img src="./imgs/Logo_01.png" alt="Logo da empresa" class="logo" 
+            data-aos="zoom-in-down">
+        </div >
+
+        <div class="box" data-aos="fade-down" >
+
+        <div class="stylenNome"data-aos="flip-right">
+        <h1>CADASTRO</h1>
+        </div>
+
+
+        <form action="">
+            <label for="nome"></label>
+            <input type="text" id="nome" class="nome" name="nome" placeholder="Nome:" required>
+
+            <label for="login"></label>
+            <input type="text" id="login" class="login" name="login" placeholder="Login:" required>
+
+            <label for="senha"></label>
+            <input type="password" id="senha" class="senha" name="senha" placeholder="Senha:" required>
+                
+            <label for="email"></label>
+            <input type="email" id="email" class="email" name="email" placeholder="Email:" required>
+                
+            <button type="submit" class="botao-cadastrar">Cadastrar</button>
+            
+        </form>
+        
+    </div>
+    <!------- Biblioteca JS ------->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- inicializas e configurações universais -->
+   <script>
+      AOS.init({
+          
+          duration: 2000, 
+          disable:'mobile'
+      });
+    </script>
+   
+
+</body>
+</html>
